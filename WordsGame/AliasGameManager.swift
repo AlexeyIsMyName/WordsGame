@@ -6,6 +6,10 @@
 //
 
 struct AliasGameManager {
+    enum ActionWord: Word {
+        case action = "ДЕЙСТВИЕ"
+    }
+    
     var score = 0
     
     private var currentRound = 1
@@ -13,7 +17,7 @@ struct AliasGameManager {
     
     private var words: [Word]
     
-    mutating func getNextWord() -> String {
+    mutating func getWord() -> String {
         
         let word = words[wordIndex]
         
@@ -34,7 +38,7 @@ struct AliasGameManager {
     }
     
     mutating func scoreUp() {
-        if words[wordIndex] == "ДЕЙСТВИЕ" {
+        if words[wordIndex] == ActionWord.action.rawValue {
             score += 3
         } else {
             score += 1
@@ -44,7 +48,7 @@ struct AliasGameManager {
     }
     
     mutating func scoreDown() {
-        if words[wordIndex] == "ДЕЙСТВИЕ" {
+        if words[wordIndex] == ActionWord.action.rawValue {
             score -= 3
         } else {
             score -= 1
@@ -60,7 +64,7 @@ struct AliasGameManager {
         print(actionWordQTY)
         
         for _ in 0...actionWordQTY {
-            words.append("ДЕЙСТВИЕ")
+            words.append(ActionWord.action.rawValue)
         }
         
         let aliasGameManager = AliasGameManager(words: words.shuffled())
