@@ -13,6 +13,8 @@
 		E7B501982893456000DE4069 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B501962893456000DE4069 /* Main.storyboard */; };
 		E7B5019A2893456200DE4069 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B501992893456200DE4069 /* Assets.xcassets */; };
 		E7B5019D2893456200DE4069 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B5019B2893456200DE4069 /* LaunchScreen.storyboard */; };
+		E7B501A62893459800DE4069 /* AliasGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B501A42893459800DE4069 /* AliasGameManager.swift */; };
+		E7B501A72893459800DE4069 /* AliasWordsPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B501A52893459800DE4069 /* AliasWordsPack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E7B501992893456200DE4069 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7B5019C2893456200DE4069 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7B5019E2893456200DE4069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7B501A42893459800DE4069 /* AliasGameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AliasGameManager.swift; sourceTree = "<group>"; };
+		E7B501A52893459800DE4069 /* AliasWordsPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AliasWordsPack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				E7B501992893456200DE4069 /* Assets.xcassets */,
 				E7B5019B2893456200DE4069 /* LaunchScreen.storyboard */,
 				E7B5019E2893456200DE4069 /* Info.plist */,
+				E7B501A42893459800DE4069 /* AliasGameManager.swift */,
+				E7B501A52893459800DE4069 /* AliasWordsPack.swift */,
 			);
 			path = WordsGame;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B501A62893459800DE4069 /* AliasGameManager.swift in Sources */,
+				E7B501A72893459800DE4069 /* AliasWordsPack.swift in Sources */,
 				E7B501952893456000DE4069 /* ViewController.swift in Sources */,
 				E7B501912893456000DE4069 /* AppDelegate.swift in Sources */,
 				E7B501932893456000DE4069 /* SceneDelegate.swift in Sources */,
