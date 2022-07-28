@@ -60,8 +60,9 @@ struct AliasGameManager {
     static func getManagerWith(_ aliasWordsPack: AliasWordsPack) -> AliasGameManager {
         
         var words = aliasWordsPack.words
-        let actionWordQTY = words.count / 15 // Слово ДЕЙСТВИЕ будет в 15 раз меньше чем остальных слов
-        print(actionWordQTY)
+        
+        // Слово ДЕЙСТВИЕ будет в 15 раз меньше чем остальных слов
+        let actionWordQTY = words.count / 15
         
         for _ in 0...actionWordQTY {
             words.append(ActionWord.action.rawValue)
