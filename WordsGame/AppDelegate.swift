@@ -14,14 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        let auduoSession = AVAudioSession.sharedInstance()
         do {
-            let auduoSession = AVAudioSession.sharedInstance()
             try auduoSession.setCategory(.playback, mode: .default, options: [.mixWithOthers])
             try auduoSession.setActive(true)
-            SoundManager.shared.prepare()
         } catch {
             print("Setting category to AVAudioSessionCategoryPlayback failed.")
         }
+        
+        SoundManager.shared.prepare()
         
         return true
     }
