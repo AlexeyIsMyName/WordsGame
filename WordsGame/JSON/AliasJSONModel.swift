@@ -34,8 +34,6 @@ struct AliasDataManager {
         }
         
         let aliasWordPacks = aliasWordPacksFromJSON.aliasWordsPacks
-        
-        print(aliasWordPacks.count)
         return aliasWordPacks
     }
 }
