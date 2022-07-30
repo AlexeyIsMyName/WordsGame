@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E786F0242894743000171591 /* AliasGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E786F0222894743000171591 /* AliasGameManager.swift */; };
+		E786F0252894743000171591 /* AliasWordsPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E786F0232894743000171591 /* AliasWordsPack.swift */; };
+		E786F0272894787300171591 /* AliasWordsCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = E786F0262894787300171591 /* AliasWordsCategories.json */; };
+		E786F02A2894795700171591 /* AliasJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E786F0292894795700171591 /* AliasJSONModel.swift */; };
 		E7B501912893456000DE4069 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B501902893456000DE4069 /* AppDelegate.swift */; };
 		E7B501932893456000DE4069 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B501922893456000DE4069 /* SceneDelegate.swift */; };
 		E7B501952893456000DE4069 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B501942893456000DE4069 /* ViewController.swift */; };
 		E7B501982893456000DE4069 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B501962893456000DE4069 /* Main.storyboard */; };
 		E7B5019A2893456200DE4069 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B501992893456200DE4069 /* Assets.xcassets */; };
 		E7B5019D2893456200DE4069 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B5019B2893456200DE4069 /* LaunchScreen.storyboard */; };
-		E7B501A62893459800DE4069 /* AliasGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B501A42893459800DE4069 /* AliasGameManager.swift */; };
-		E7B501A72893459800DE4069 /* AliasWordsPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B501A52893459800DE4069 /* AliasWordsPack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E786F0222894743000171591 /* AliasGameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AliasGameManager.swift; sourceTree = "<group>"; };
+		E786F0232894743000171591 /* AliasWordsPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AliasWordsPack.swift; sourceTree = "<group>"; };
+		E786F0262894787300171591 /* AliasWordsCategories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AliasWordsCategories.json; sourceTree = "<group>"; };
+		E786F0292894795700171591 /* AliasJSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasJSONModel.swift; sourceTree = "<group>"; };
 		E7B5018D2893456000DE4069 /* WordsGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B501902893456000DE4069 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7B501922893456000DE4069 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,8 +32,6 @@
 		E7B501992893456200DE4069 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7B5019C2893456200DE4069 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7B5019E2893456200DE4069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7B501A42893459800DE4069 /* AliasGameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AliasGameManager.swift; sourceTree = "<group>"; };
-		E7B501A52893459800DE4069 /* AliasWordsPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AliasWordsPack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E786F0282894793E00171591 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				E786F0262894787300171591 /* AliasWordsCategories.json */,
+				E786F0292894795700171591 /* AliasJSONModel.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		E7B501842893456000DE4069 = {
 			isa = PBXGroup;
 			children = (
@@ -67,8 +80,9 @@
 				E7B501992893456200DE4069 /* Assets.xcassets */,
 				E7B5019B2893456200DE4069 /* LaunchScreen.storyboard */,
 				E7B5019E2893456200DE4069 /* Info.plist */,
-				E7B501A42893459800DE4069 /* AliasGameManager.swift */,
-				E7B501A52893459800DE4069 /* AliasWordsPack.swift */,
+				E786F0222894743000171591 /* AliasGameManager.swift */,
+				E786F0232894743000171591 /* AliasWordsPack.swift */,
+				E786F0282894793E00171591 /* JSON */,
 			);
 			path = WordsGame;
 			sourceTree = "<group>";
@@ -131,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E786F0272894787300171591 /* AliasWordsCategories.json in Resources */,
 				E7B5019D2893456200DE4069 /* LaunchScreen.storyboard in Resources */,
 				E7B5019A2893456200DE4069 /* Assets.xcassets in Resources */,
 				E7B501982893456000DE4069 /* Main.storyboard in Resources */,
@@ -144,8 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7B501A62893459800DE4069 /* AliasGameManager.swift in Sources */,
-				E7B501A72893459800DE4069 /* AliasWordsPack.swift in Sources */,
+				E786F02A2894795700171591 /* AliasJSONModel.swift in Sources */,
+				E786F0242894743000171591 /* AliasGameManager.swift in Sources */,
+				E786F0252894743000171591 /* AliasWordsPack.swift in Sources */,
 				E7B501952893456000DE4069 /* ViewController.swift in Sources */,
 				E7B501912893456000DE4069 /* AppDelegate.swift in Sources */,
 				E7B501932893456000DE4069 /* SceneDelegate.swift in Sources */,

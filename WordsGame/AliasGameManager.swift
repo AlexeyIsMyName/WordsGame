@@ -15,7 +15,7 @@ struct AliasGameManager {
     private var currentRound = 1
     private var wordIndex = 0
     
-    private var words: [Word]
+    private var words: [String]
     
     mutating func getWord() -> String {
         
@@ -58,7 +58,6 @@ struct AliasGameManager {
     }
     
     static func getManagerWith(_ aliasWordsPack: AliasWordsPack) -> AliasGameManager {
-        
         var words = aliasWordsPack.words
         
         // Слово ДЕЙСТВИЕ будет в 15 раз меньше чем остальных слов

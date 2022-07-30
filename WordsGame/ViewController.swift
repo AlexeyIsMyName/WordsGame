@@ -12,10 +12,13 @@ class ViewController: UIViewController {
     @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var wordLabel: UILabel!
     
-    private var aliasGameManager = AliasGameManager.getManagerWith(AliasWordsPack.getAliasWordsCategories()[0])
+    private var aliasGameManager = AliasGameManager.getManagerWith(AliasWordsPack.getAliasWordsCategoriesJSON()[1])
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let _ = AliasDataManager.fetchData()
+        
         updateUI()
     }
 
